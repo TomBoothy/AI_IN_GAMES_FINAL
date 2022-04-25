@@ -26,9 +26,9 @@ ShipTypes AIG_ShipBuildHelper::CalculateShipToBuild()
 	float LowThreatWeight = 0.1f;
 	float ModerateThreatWeight = 0.4f;
 	float HighThreatWeight = 0.8f;
-	float FewResourcesWeight = 0.2f;
+	float FewResourcesWeight = 0.3f;
 	float SomeResourcesWeight = 0.1f;
-	float AbundantResourcesWeight = 0.0f;
+	float AbundantResourcesWeight = -0.2f;
 
 	//adding up all the weights for a final weightd t0tal
 	float finalWeightedValue = (m_NoThreat * NoThreatWeight) + (m_LowThreat * LowThreatWeight) + (m_ModerateThreat * ModerateThreatWeight) + (m_HighThreat * HighThreatWeight) + (m_FewResources * FewResourcesWeight) + (m_SomeResources * SomeResourcesWeight) + (m_AbundantResources * AbundantResourcesWeight);
