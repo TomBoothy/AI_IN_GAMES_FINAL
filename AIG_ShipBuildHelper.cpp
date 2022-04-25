@@ -291,7 +291,7 @@ void AIG_ShipBuildHelper::CalculateLocalResources()
 void AIG_ShipBuildHelper::AssignResourceLevels()
 {
 	//Normalised value of m_AbundantResources
-	float normVal = (m_AbundantResources / 20.0f);
+	float normVal = (m_AbundantResources / 16.0f);
 
 	if (normVal < 5)
 	{
